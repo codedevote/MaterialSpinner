@@ -37,23 +37,23 @@ In the xml :
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        app:ms_multiline="false"
-        app:ms_dropDownHintView="@layout/my_custom_dropdown_hint_item_layout"
-        app:ms_hintView="@layout/my_custom_hint_item_layout"
-        app:ms_hint="hint"
-        app:ms_enableFloatingLabel="false"
-        app:ms_enableErrorLabel="false"
-        app:ms_floatingLabelText="floating label"
-        app:ms_baseColor="@color/base"
-        app:ms_highlightColor="@color/highlight"
-        app:ms_errorColor="@color/error"
-        app:ms_typeface="typeface.ttf"
-        app:ms_thickness="2dp"
-        app:ms_hintColor="@color/hint"
-        app:ms_arrowColor="@color/arrow"
-        app:ms_arrowSize="16dp"
-        app:ms_alignLabels="false"
-        app:ms_floatingLabelColor="@color/floating_label"/>
+        app:msp_multiline="false"
+        app:msp_dropDownHintView="@layout/my_custom_dropdown_hint_item_layout"
+        app:msp_hintView="@layout/my_custom_hint_item_layout"
+        app:msp_hint="hint"
+        app:msp_enableFloatingLabel="false"
+        app:msp_enableErrorLabel="false"
+        app:msp_floatingLabelText="floating label"
+        app:msp_baseColor="@color/base"
+        app:msp_highlightColor="@color/highlight"
+        app:msp_errorColor="@color/error"
+        app:msp_typeface="typeface.ttf"
+        app:msp_thickness="2dp"
+        app:msp_hintColor="@color/hint"
+        app:msp_arrowColor="@color/arrow"
+        app:msp_arrowSize="16dp"
+        app:msp_alignLabels="false"
+        app:msp_floatingLabelColor="@color/floating_label"/>
 ```
 You can set a hint and a floating label text. If no floating label text is provided, the hint will be set instead.
 
@@ -74,7 +74,7 @@ If you need to set an error message, you can do it the same way than with an Edi
  //Desactivate
  spinner.setError(null);
 ```
-You can choose to have a scrolling animation or to set the error message on multiple lines with the "ms_multiline" attribute in xml (default is true).
+You can choose to have a scrolling animation or to set the error message on multiple lines with the "msp_multiline" attribute in xml (default is true).
 
 
 ## License

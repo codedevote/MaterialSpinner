@@ -160,31 +160,31 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
         defaultArray.recycle();
 
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.MaterialSpinner);
-        baseColor = array.getColor(R.styleable.MaterialSpinner_ms_baseColor, defaultBaseColor);
-        highlightColor = array.getColor(R.styleable.MaterialSpinner_ms_highlightColor, defaultHighlightColor);
-        errorColor = array.getColor(R.styleable.MaterialSpinner_ms_errorColor, defaultErrorColor);
+        baseColor = array.getColor(R.styleable.MaterialSpinner_msp_baseColor, defaultBaseColor);
+        highlightColor = array.getColor(R.styleable.MaterialSpinner_msp_highlightColor, defaultHighlightColor);
+        errorColor = array.getColor(R.styleable.MaterialSpinner_mps_errorColor, defaultErrorColor);
         disabledColor = context.getResources().getColor(R.color.disabled_color);
-        error = array.getString(R.styleable.MaterialSpinner_ms_error);
-        hint = array.getString(R.styleable.MaterialSpinner_ms_hint);
-        hintColor = array.getColor(R.styleable.MaterialSpinner_ms_hintColor, baseColor);
-        hintTextSize = array.getDimension(R.styleable.MaterialSpinner_ms_hintTextSize, -1);
-        floatingLabelText = array.getString(R.styleable.MaterialSpinner_ms_floatingLabelText);
-        floatingLabelColor = array.getColor(R.styleable.MaterialSpinner_ms_floatingLabelColor, baseColor);
-        multiline = array.getBoolean(R.styleable.MaterialSpinner_ms_multiline, true);
-        minNbErrorLines = array.getInt(R.styleable.MaterialSpinner_ms_nbErrorLines, 1);
-        alignLabels = array.getBoolean(R.styleable.MaterialSpinner_ms_alignLabels, true);
-        thickness = array.getDimension(R.styleable.MaterialSpinner_ms_thickness, 1);
-        thicknessError = array.getDimension(R.styleable.MaterialSpinner_ms_thickness_error, 2);
-        arrowColor = array.getColor(R.styleable.MaterialSpinner_ms_arrowColor, baseColor);
-        arrowSize = array.getDimension(R.styleable.MaterialSpinner_ms_arrowSize, dpToPx(DEFAULT_ARROW_WIDTH_DP));
-        enableErrorLabel = array.getBoolean(R.styleable.MaterialSpinner_ms_enableErrorLabel, true);
-        enableFloatingLabel = array.getBoolean(R.styleable.MaterialSpinner_ms_enableFloatingLabel, true);
-        alwaysShowFloatingLabel = array.getBoolean(R.styleable.MaterialSpinner_ms_alwaysShowFloatingLabel, false);
-        isRtl = array.getBoolean(R.styleable.MaterialSpinner_ms_isRtl, false);
-        mHintView = array.getResourceId(R.styleable.MaterialSpinner_ms_hintView, android.R.layout.simple_spinner_item);
-        mDropDownHintView = array.getResourceId(R.styleable.MaterialSpinner_ms_dropDownHintView, android.R.layout.simple_spinner_dropdown_item);
+        error = array.getString(R.styleable.MaterialSpinner_msp_error);
+        hint = array.getString(R.styleable.MaterialSpinner_msp_hint);
+        hintColor = array.getColor(R.styleable.MaterialSpinner_msp_hintColor, baseColor);
+        hintTextSize = array.getDimension(R.styleable.MaterialSpinner_msp_hintTextSize, -1);
+        floatingLabelText = array.getString(R.styleable.MaterialSpinner_msp_floatingLabelText);
+        floatingLabelColor = array.getColor(R.styleable.MaterialSpinner_msp_floatingLabelColor, baseColor);
+        multiline = array.getBoolean(R.styleable.MaterialSpinner_msp_multiline, true);
+        minNbErrorLines = array.getInt(R.styleable.MaterialSpinner_msp_nbErrorLines, 1);
+        alignLabels = array.getBoolean(R.styleable.MaterialSpinner_msp_alignLabels, true);
+        thickness = array.getDimension(R.styleable.MaterialSpinner_msp_thickness, 1);
+        thicknessError = array.getDimension(R.styleable.MaterialSpinner_msp_thickness_error, 2);
+        arrowColor = array.getColor(R.styleable.MaterialSpinner_msp_arrowColor, baseColor);
+        arrowSize = array.getDimension(R.styleable.MaterialSpinner_msp_arrowSize, dpToPx(DEFAULT_ARROW_WIDTH_DP));
+        enableErrorLabel = array.getBoolean(R.styleable.MaterialSpinner_msp_enableErrorLabel, true);
+        enableFloatingLabel = array.getBoolean(R.styleable.MaterialSpinner_msp_enableFloatingLabel, true);
+        alwaysShowFloatingLabel = array.getBoolean(R.styleable.MaterialSpinner_msp_alwaysShowFloatingLabel, false);
+        isRtl = array.getBoolean(R.styleable.MaterialSpinner_msp_isRtl, false);
+        mHintView = array.getResourceId(R.styleable.MaterialSpinner_msp_hintView, android.R.layout.simple_spinner_item);
+        mDropDownHintView = array.getResourceId(R.styleable.MaterialSpinner_msp_dropDownHintView, android.R.layout.simple_spinner_dropdown_item);
 
-        String typefacePath = array.getString(R.styleable.MaterialSpinner_ms_typeface);
+        String typefacePath = array.getString(R.styleable.MaterialSpinner_msp_typeface);
         if (typefacePath != null) {
             typeface = Typeface.createFromAsset(getContext().getAssets(), typefacePath);
         }
